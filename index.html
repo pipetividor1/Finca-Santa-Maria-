@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finca Santa María | Productos agropecuarios en Granada, Meta</title>
+<meta name="description" content="Finca Santa María, Granada, Meta, Colombia. Carne de cuy, pollo y pescado, naranjas y mandarinas frescas del Ariari.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{
+  agro:{50:'#f0fdf4',100:'#dcfce7',200:'#bbf7d0',300:'#86efac',400:'#4ade80',500:'#22c55e',600:'#16a34a',700:'#15803d',800:'#166534',900:'#14532d',950:'#052e16'},
+  amberGold:{300:'#fcd34d',400:'#fbbf24',500:'#f59e0b',600:'#d97706'}},
+  fontFamily:{sans:['"Plus Jakarta Sans"','sans-serif'],serif:['"Playfair Display"','serif']}}}}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+<!-- NAVEGACIÓN -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-agro-950/80 backdrop-blur-md border-b border-agro-800/40 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="#inicio" class="flex items-center gap-3 group">
+      <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amberGold-500 to-agro-500 flex items-center justify-center text-agro-950 text-xl shadow-lg group-hover:scale-105 transition-transform"><i class="fa-solid fa-wheat-awn"></i></div>
+      <div>
+        <span class="text-xl font-extrabold font-serif block leading-none">Santa María</span>
+        <span class="text-xs font-semibold uppercase tracking-widest text-amberGold-400 block mt-1">Finca Agropecuaria</span>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#inicio" class="nav-link text-sm font-medium hover:text-amberGold-400 transition-colors">Inicio</a>
+      <a href="#nosotros" class="nav-link text-sm font-medium hover:text-amberGold-400 transition-colors">Nosotros</a>
+      <a href="#productos" class="nav-link text-sm font-medium hover:text-amberGold-400 transition-colors">Productos</a>
+      <a href="#contacto" class="nav-link text-sm font-medium hover:text-amberGold-400 transition-colors">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="https://wa.me/573144652543" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-agro-600 to-agro-500 hover:from-agro-500 hover:to-agro-400 text-white font-semibold px-5 py-2.5 rounded-full text-sm shadow-md transition-all hover:-translate-y-0.5">
+        <i class="fa-brands fa-whatsapp text-lg"></i><span>Hacer pedido</span>
+      </a>
+      <button id="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" class="md:hidden p-2 rounded-lg text-slate-200 hover:bg-agro-800/50">
+        <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-agro-950/95 border-b border-agro-800/80 backdrop-blur-xl px-4 pt-2 pb-6 space-y-2">
+    <a href="#inicio" class="block px-3 py-2 rounded-lg font-medium hover:bg-agro-800/60">Inicio</a>
+    <a href="#nosotros" class="block px-3 py-2 rounded-lg font-medium hover:bg-agro-800/60">Nosotros</a>
+    <a href="#productos" class="block px-3 py-2 rounded-lg font-medium hover:bg-agro-800/60">Productos</a>
+    <a href="#contacto" class="block px-3 py-2 rounded-lg font-medium hover:bg-agro-800/60">Contacto</a>
+    <a href="https://wa.me/573144652543" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-agro-600 font-semibold py-3 rounded-xl mt-3"><i class="fa-brands fa-whatsapp text-xl"></i><span>Escribir por WhatsApp</span></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="relative min-h-screen flex items-center pt-24 pb-24 overflow-hidden bg-gradient-to-br from-agro-950 via-agro-900 to-agro-800">
+  <div class="absolute inset-0">
+    <!-- FOTO DE PORTADA: sube tu imagen como img/hero.jpg -->
+    <img src="img/hero.jpg" alt="Finca Santa María, Granada, Meta" class="w-full h-full object-cover brightness-75" onerror="this.remove()">
+    <div class="absolute inset-0 bg-gradient-to-r from-agro-950/90 via-agro-950/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-agro-950 via-transparent to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="max-w-3xl">
+      <div class="reveal-element inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amberGold-500/20 border border-amberGold-400/30 backdrop-blur-md text-amberGold-300 text-xs sm:text-sm font-semibold mb-6">
+        <i class="fa-solid fa-location-dot text-amberGold-400"></i><span>Granada, Meta — Colombia</span>
+      </div>
+      <h1 class="reveal-element delay-100 text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+        Del campo del <span class="text-transparent bg-clip-text bg-gradient-to-r from-amberGold-400 via-agro-300 to-agro-400">Ariari</span> a su mesa
+      </h1>
+      <p class="reveal-element delay-200 text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
+        En <strong class="text-white font-semibold">Finca Santa María</strong> criamos y cosechamos carne de cuy, pollo y pescado, además de naranjas y mandarinas frescas.
+      </p>
+      <div class="reveal-element delay-300 flex flex-col sm:flex-row gap-4">
+        <a href="#productos" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amberGold-500 to-amberGold-600 hover:from-amberGold-400 hover:to-amberGold-500 text-agro-950 font-bold px-8 py-4 rounded-xl shadow-lg shadow-amberGold-500/25 transition-all hover:-translate-y-1">
+          <span>Ver productos</span><i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contacto" class="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md font-semibold px-8 py-4 rounded-xl transition-all hover:-translate-y-1">
+          <i class="fa-solid fa-phone"></i><span>Contactar la finca</span>
+        </a>
+      </div>
+      <div class="reveal-element delay-400 grid grid-cols-2 sm:grid-cols-3 gap-4 mt-12 pt-8 border-t border-slate-700/60">
+        <div><div class="text-2xl font-bold text-white font-serif">Producto fresco</div><div class="text-xs text-slate-400">Cosecha y crianza propia</div></div>
+        <div><div class="text-2xl font-bold text-white font-serif">Granada, Meta</div><div class="text-xs text-slate-400">Corazón del Ariari</div></div>
+        <div class="col-span-2 sm:col-span-1"><div class="text-2xl font-bold text-white font-serif">Venta directa</div><div class="text-xs text-slate-400">Del productor al cliente</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="py-24 bg-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="relative">
+      <div class="reveal-element reveal-left aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative z-10 border-4 border-slate-100 bg-gradient-to-br from-agro-200 to-agro-400 flex items-center justify-center">
+        <!-- FOTO DE LA FINCA: img/finca.jpg -->
+        <img src="img/finca.jpg" alt="Vista de la Finca Santa María" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+        <span class="text-agro-900/60 text-sm font-semibold border-2 border-dashed border-agro-900/40 rounded-full px-4 py-1.5">Foto de la finca</span>
+      </div>
+      <div class="reveal-element delay-300 hidden sm:flex absolute -bottom-8 -right-8 z-20 bg-agro-900 text-white p-6 rounded-2xl shadow-xl max-w-xs border border-agro-700 items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-amberGold-500 text-agro-950 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-seedling"></i></div>
+        <div><h4 class="font-bold text-sm">Compromiso regional</h4><p class="text-xs text-slate-300 mt-0.5">Producimos con el campo del Ariari.</p></div>
+      </div>
+      <div class="absolute -top-6 -left-6 w-full h-full bg-agro-100 rounded-3xl -z-10 -rotate-1"></div>
+    </div>
+    <div>
+      <div class="reveal-element inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-agro-100 text-agro-800 font-semibold text-xs uppercase tracking-wider mb-4"><i class="fa-solid fa-leaf"></i><span>Sobre nosotros</span></div>
+      <h2 class="reveal-element delay-100 text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight mb-6">Una finca familiar en Granada, Meta</h2>
+      <p class="reveal-element delay-200 text-slate-600 leading-relaxed mb-6">En la <strong class="text-agro-900">Finca Santa María</strong> aprovechamos la tierra fértil y el agua del Ariari para criar cuyes, pollos y peces, y cultivar naranjas y mandarinas.</p>
+      <p class="reveal-element delay-300 text-slate-600 leading-relaxed mb-8">Vendemos directamente al cliente, para que reciba el producto fresco y al mejor precio.</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="reveal-element delay-300 flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100"><i class="fa-solid fa-circle-check text-agro-600 mt-1"></i><div><h4 class="font-semibold text-sm">Cuy, pollo y pescado</h4><p class="text-xs text-slate-500">Criados en la finca.</p></div></div>
+        <div class="reveal-element delay-400 flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100"><i class="fa-solid fa-circle-check text-agro-600 mt-1"></i><div><h4 class="font-semibold text-sm">Naranjas y mandarinas</h4><p class="text-xs text-slate-500">Cosecha fresca por temporada.</p></div></div>
+        <div class="reveal-element delay-400 flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100"><i class="fa-solid fa-circle-check text-agro-600 mt-1"></i><div><h4 class="font-semibold text-sm">Pedidos por WhatsApp</h4><p class="text-xs text-slate-500">Atención rápida y directa.</p></div></div>
+        <div class="reveal-element delay-500 flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100"><i class="fa-solid fa-circle-check text-agro-600 mt-1"></i><div><h4 class="font-semibold text-sm">Ubicación estratégica</h4><p class="text-xs text-slate-500">Granada, Meta.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS (catálogo) -->
+<section id="productos" class="py-24 bg-slate-100/80 border-y border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="reveal-element inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-agro-200 text-agro-900 font-semibold text-xs uppercase tracking-wider mb-3"><i class="fa-solid fa-boxes-packing"></i><span>Catálogo</span></div>
+      <h2 class="reveal-element delay-100 text-3xl sm:text-5xl font-serif font-bold text-slate-900">Productos disponibles</h2>
+      <p class="reveal-element delay-200 text-slate-600 mt-4 text-lg">Mire el producto y su precio, y haga su pedido directo por WhatsApp.</p>
+    </div>
+    <div id="filters" class="reveal-element delay-300 flex flex-wrap justify-center gap-3 mb-12">
+      <button class="filter-btn is-active px-5 py-2 rounded-full border-2 border-agro-700 text-agro-800 font-semibold text-sm" data-filter="all">Todos</button>
+      <button class="filter-btn px-5 py-2 rounded-full border-2 border-agro-700 text-agro-800 font-semibold text-sm" data-filter="Carnes">Carnes</button>
+      <button class="filter-btn px-5 py-2 rounded-full border-2 border-agro-700 text-agro-800 font-semibold text-sm" data-filter="Frutas">Frutas</button>
+    </div>
+    <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+    <div class="reveal-element mt-16 bg-gradient-to-r from-agro-900 to-agro-800 text-white rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-serif font-bold">¿Necesita una cantidad mayor?</h3>
+        <p class="text-slate-300 text-sm max-w-xl mt-2">Escríbanos y le cotizamos pedidos por volumen o entregas frecuentes.</p>
+      </div>
+      <a href="https://wa.me/573144652543?text=Hola%2C%20quisiera%20cotizar%20un%20pedido%20por%20volumen" target="_blank" rel="noopener" class="shrink-0 bg-amberGold-500 hover:bg-amberGold-400 text-agro-950 font-bold px-8 py-4 rounded-xl transition-all shadow-lg text-sm">Cotizar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5 space-y-8">
+      <div>
+        <div class="reveal-element inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-agro-100 text-agro-800 font-semibold text-xs uppercase tracking-wider mb-3"><i class="fa-solid fa-address-book"></i><span>Contacto</span></div>
+        <h2 class="reveal-element delay-100 text-3xl sm:text-4xl font-serif font-bold text-slate-900">Hable con la finca</h2>
+        <p class="reveal-element delay-200 text-slate-600 mt-3">Estamos en el municipio de Granada, Meta. Escríbanos y le respondemos.</p>
+      </div>
+      <div class="space-y-6">
+        <div class="reveal-element delay-100 flex gap-4"><div class="w-12 h-12 rounded-xl bg-agro-100 text-agro-800 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-wheat-awn"></i></div><div><h4 class="font-bold">Finca Santa María</h4><p class="text-sm text-slate-600">Empresa agropecuaria</p></div></div>
+        <div class="reveal-element delay-200 flex gap-4"><div class="w-12 h-12 rounded-xl bg-agro-100 text-agro-800 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-location-dot"></i></div><div><h4 class="font-bold">Ubicación</h4><p class="text-sm text-slate-600">Granada, Meta — Colombia</p><p class="text-xs text-slate-400">Región del Ariari</p></div></div>
+        <div class="reveal-element delay-300 flex gap-4"><div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-xl shrink-0"><i class="fa-brands fa-whatsapp"></i></div><div><h4 class="font-bold">WhatsApp</h4><a href="https://wa.me/573144652543" target="_blank" rel="noopener" class="text-sm font-semibold text-agro-700 hover:underline">+57 314 465 2543</a></div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-7">
+      <div class="reveal-element reveal-right delay-200 bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-3xl shadow-sm">
+        <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="fa-regular fa-paper-plane text-agro-600"></i>Haga su pedido</h3>
+        <form id="contact-form" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label for="f-name" class="block text-xs font-semibold text-slate-700 mb-2">Nombre completo</label><input id="f-name" type="text" required placeholder="Ej. Carlos Mendoza" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-agro-500 focus:border-agro-500 text-sm outline-none"></div>
+            <div><label for="f-phone" class="block text-xs font-semibold text-slate-700 mb-2">Teléfono</label><input id="f-phone" type="tel" required placeholder="Ej. 310 000 0000" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-agro-500 focus:border-agro-500 text-sm outline-none"></div>
+          </div>
+          <div><label for="f-product" class="block text-xs font-semibold text-slate-700 mb-2">Producto de interés</label><select id="f-product" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-agro-500 text-sm outline-none bg-white"></select></div>
+          <div><label for="f-msg" class="block text-xs font-semibold text-slate-700 mb-2">Cantidad o mensaje</label><textarea id="f-msg" rows="4" required placeholder="Ej. Necesito 2 libras de pollo para el sábado" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-agro-500 text-sm outline-none resize-none"></textarea></div>
+          <button type="submit" class="w-full bg-agro-800 hover:bg-agro-900 text-white font-bold py-4 rounded-xl shadow-lg transition-all text-sm flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i><span>Enviar pedido por WhatsApp</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRADERA ANIMADA -->
+<div class="grass-container" aria-hidden="true">
+  <div class="grass-layer grass-layer-1">
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,40 C200,95 400,-15 600,40 C800,95 1000,-15 1200,40 L1200,140 L0,140 Z"/></svg>
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,40 C200,95 400,-15 600,40 C800,95 1000,-15 1200,40 L1200,140 L0,140 Z"/></svg>
+  </div>
+  <div class="blades" id="blades"></div>
+  <div class="grass-layer grass-layer-2">
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,70 C150,30 450,110 600,70 C750,30 1050,110 1200,70 L1200,140 L0,140 Z"/></svg>
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,70 C150,30 450,110 600,70 C750,30 1050,110 1200,70 L1200,140 L0,140 Z"/></svg>
+  </div>
+  <div class="grass-layer grass-layer-3">
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,100 C200,70 400,130 600,100 C800,70 1000,130 1200,100 L1200,140 L0,140 Z"/></svg>
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,100 C200,70 400,130 600,100 C800,70 1000,130 1200,100 L1200,140 L0,140 Z"/></svg>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-agro-950 text-white pt-6 pb-12 relative z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-agro-900">
+      <div class="md:col-span-2 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amberGold-500 flex items-center justify-center text-agro-950 text-lg"><i class="fa-solid fa-wheat-awn"></i></div>
+          <span class="text-2xl font-serif font-bold">Finca Santa María</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-md">Producimos con dedicación en Granada, Meta, y llevamos el campo del Ariari a su mesa.</p>
+        <a href="https://wa.me/573144652543" target="_blank" rel="noopener" aria-label="WhatsApp" class="inline-flex w-9 h-9 rounded-full bg-agro-900 hover:bg-agro-700 items-center justify-center text-slate-300 hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div>
+        <h4 class="text-amberGold-400 font-bold text-sm uppercase tracking-wider mb-4">Navegación</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+          <li><a href="#nosotros" class="hover:text-white">Nosotros</a></li>
+          <li><a href="#productos" class="hover:text-white">Productos</a></li>
+          <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-amberGold-400 font-bold text-sm uppercase tracking-wider mb-4">Ubicación</h4>
+        <p class="text-sm text-slate-400 leading-relaxed">Granada, Meta<br>Región del Ariari<br>Colombia</p>
+        <p class="text-xs text-agro-400 font-semibold mt-3">WhatsApp: +57 314 465 2543</p>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col sm:flex-row justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
+      <p>&copy; <span id="year"></span> Finca Santa María. Todos los derechos reservados.</p>
+      <p>Granada, Meta — Colombia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/573144652543?text=Hola%2C%20me%20comunico%20desde%20la%20p%C3%A1gina%20web%20de%20Finca%20Santa%20Mar%C3%ADa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="whatsapp-float fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center text-3xl shadow-2xl transition-transform hover:scale-110">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+/* ============ CATÁLOGO: edita aquí nombres, precios y fotos ============
+   p: precio en pesos (0 = muestra "Consultar precio")
+   u: unidad de venta  |  img: ruta de tu foto  |  c: categoría (Carnes / Frutas) */
+const PRODUCTS = [
+  {n:'Carne de cuy',     c:'Carnes', p:0, u:'unidad',  img:'img/cuy.jpg',       d:'Cuy criado en finca, carne tierna y de sabor tradicional.'},
+  {n:'Carne de pollo',   c:'Carnes', p:0, u:'libra',   img:'img/pollo.jpg',     d:'Pollo fresco de crianza en finca, listo para cocinar.'},
+  {n:'Carne de pescado', c:'Carnes', p:0, u:'libra',   img:'img/pescado.jpg',   d:'Pescado de estanque, fresco y limpio.'},
+  {n:'Naranjas',         c:'Frutas', p:0, u:'docena',  img:'img/naranja.jpg',   d:'Jugosas y cosechadas en su punto, ideales para jugo.'},
+  {n:'Mandarinas',       c:'Frutas', p:0, u:'docena',  img:'img/mandarina.jpg', d:'Dulces y fáciles de pelar, directas del árbol.'}
+];
+
+const money = v => new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(v);
+const grid = document.getElementById('products-grid');
+
+/* Observador de animaciones de entrada */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('active'); io.unobserve(e.target); }
+}), {threshold:.12});
+document.querySelectorAll('.reveal-element').forEach(el => io.observe(el));
+
+function renderProducts(filter='all') {
+  grid.innerHTML = PRODUCTS.filter(p => filter==='all' || p.c===filter).map((p,i) => `
+    <article class="card-in bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col group" style="animation-delay:${i*90}ms">
+      <div class="relative h-60 overflow-hidden bg-gradient-to-br from-agro-200 to-agro-400 flex items-center justify-center">
+        <img src="${p.img}" alt="${p.n}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.remove()">
+        <span class="text-agro-900/60 text-xs font-semibold border-2 border-dashed border-agro-900/40 rounded-full px-3 py-1">Foto: ${p.n}</span>
+        <span class="absolute top-4 left-4 bg-agro-900 text-white text-xs font-bold px-3 py-1 rounded-full shadow">${p.c}</span>
+        <span class="absolute top-4 right-4 bg-amberGold-500 text-agro-950 text-xs font-extrabold px-3 py-1 rounded-full shadow">Disponible</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-agro-700 transition-colors">${p.n}</h3>
+          <p class="text-slate-600 text-sm mb-4 leading-relaxed">${p.d}</p>
+        </div>
+        <div>
+          <div class="flex items-end justify-between pt-4 border-t border-slate-100 mb-4">
+            <span class="text-2xl font-extrabold font-serif text-agro-700">${p.p ? money(p.p) : 'Consultar precio'}</span>
+            ${p.p ? `<span class="text-xs text-slate-500 font-semibold">por ${p.u}</span>` : ''}
+          </div>
+          <a href="https://wa.me/573144652543?text=${encodeURIComponent('Hola, quiero pedir: '+p.n)}" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-agro-700 hover:bg-agro-800 text-white font-semibold py-3 px-4 rounded-xl transition-colors text-sm">
+            <i class="fa-brands fa-whatsapp text-lg"></i><span>Pedir por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </article>`).join('');
+}
+renderProducts();
+
+document.getElementById('filters').addEventListener('click', e => {
+  const b = e.target.closest('.filter-btn'); if (!b) return;
+  document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('is-active'));
+  b.classList.add('is-active');
+  renderProducts(b.dataset.filter);
+});
+
+/* Lista de productos del formulario */
+document.getElementById('f-product').innerHTML =
+  PRODUCTS.map(p => `<option>${p.n}</option>`).join('') + '<option>Otra consulta</option>';
+
+/* Formulario → WhatsApp */
+document.getElementById('contact-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const msg = `Hola Finca Santa María, soy ${f('f-name')} (tel. ${f('f-phone')}).\nInterés: ${f('f-product')}\nMensaje: ${f('f-msg')}`;
+  window.open('https://wa.me/573144652543?text=' + encodeURIComponent(msg), '_blank');
+  function f(id){ return document.getElementById(id).value.trim(); }
+});
+
+/* Menú móvil */
+const btn = document.getElementById('mobile-menu-btn'), menu = document.getElementById('mobile-menu'), icon = document.getElementById('menu-icon');
+function toggleMenu(open){
+  menu.classList.toggle('hidden', !open);
+  btn.setAttribute('aria-expanded', open);
+  icon.className = open ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl';
+}
+btn.addEventListener('click', () => toggleMenu(menu.classList.contains('hidden')));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+/* Subrayado animado del menú */
+document.querySelectorAll('.nav-link').forEach(a => a.classList.add('relative','py-1',
+  "after:content-['']",'after:absolute','after:bottom-0','after:left-0','after:w-0','after:h-0.5','after:bg-amberGold-400','hover:after:w-full','after:transition-all'));
+
+/* Briznas de pasto mecidas por el viento */
+(function(){
+  const cols = ['#14532d','#166534','#15803d','#16a34a','#22c55e','#4ade80'];
+  const n = Math.min(Math.round(innerWidth/9), 200);
+  let h = '';
+  for (let i=0;i<n;i++){
+    const hh = 35 + Math.random()*55, w = 6 + Math.random()*8;
+    h += `<i style="left:${(i/n*100+(Math.random()-.5)*1.4).toFixed(2)}%;height:${hh.toFixed(0)}px;width:${w.toFixed(0)}px;background:${cols[Math.floor(Math.random()*cols.length)]};animation-duration:${(2.4+Math.random()*2.6).toFixed(2)}s;animation-delay:-${(Math.random()*4).toFixed(2)}s;--a:${(4+Math.random()*9).toFixed(1)}deg"></i>`;
+  }
+  document.getElementById('blades').innerHTML = h;
+})();
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
